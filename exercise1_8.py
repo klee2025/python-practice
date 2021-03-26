@@ -19,4 +19,22 @@ for x in sample:
 print(ans)
 
 #1.8.5 Write a Python program to remove duplicates from a list.
+sample=[1,1,2,2,3,3,4,4,5]
+ans=[]
+
+for x in sample:
+    if x not in ans:
+        ans.append(x)
+
+print(ans)
+
 #1.8.7 write a program that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your program works on two lists of different sizes.
+sample=[1,1,2,2,3,3,4,4,5]
+sample2=[1,5,6,7]
+ans2=[]
+
+for x in ans:
+    if x in sample2:
+        ans2.append(x)
+
+print(ans2)
