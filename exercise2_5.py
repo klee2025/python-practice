@@ -23,3 +23,8 @@ for i in keys:
 print(thisdict)
 
 #2.5.3.c Draw a graph with values in the dictionary
+for i in thisdict.keys():
+    print(i,"|",end="")
+    for j in range (1,thisdict[i]+1):
+        print("-",end="")
+    print(' ')
