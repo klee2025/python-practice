@@ -10,10 +10,16 @@ for x in range (1,31):
 dna = 'gcatgacgttattacgactctgtcacgccgcggtgcgactgaggcgtggcgtctgctgggcctttacttcgcctccgcgccctgcattccgttcctggcctcg'
 
 #2.5.3.b 각 염기의 개수를 dictionary형태로 저장하세요. Ex: {‘g’:30}
-dna.count('g')
-dna.count('c')
-dna.count('a')
-dna.count('t')
-thisdict = {'g':30,'c':36,'a':10,'t':27}
+thisdict={}
+keys=[]
+
+for i in dna:
+    if i not in keys:
+        keys.append(i)
+print(keys)
+
+for i in keys:
+    thisdict[i]=dna.count(i)
+print(thisdict)
 
 #2.5.3.c Draw a graph with values in the dictionary
