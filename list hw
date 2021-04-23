@@ -1,0 +1,6 @@
+samplelist=['PHP', 'PHP', 'Python', 'PHP', 'Python', 'JS', 'Python', 'Python', 'PHP', 'Python']
+maxlist=[samplelist[0],samplelist.count(sample[0])]
+
+for i in samplelist:
+    if maxlist [1]<=sample.count(i):
+        maxlist=[i,sample.count(i)]
